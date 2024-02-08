@@ -1,12 +1,34 @@
 package day0124;
 
-import lombok.Getter;
 
-@Getter
 class WorkVO {
 	private int number;
     private String name;
-    private int javaScore;
+    public int getNumber() {
+		return number;
+	}
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public int getJavaScore() {
+		return javaScore;
+	}
+
+
+
+	public int getOracleScore() {
+		return oracleScore;
+	}
+
+
+
+	private int javaScore;
     private int oracleScore;
 
     public WorkVO(int number, String name, int javaScore, int oracleScore) {
